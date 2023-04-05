@@ -17,7 +17,7 @@ function MovieList() {
     <div className="row">
         <h4>The Movies</h4>
     </div>
-        <table className="table table-striped table-dark mx-auto" style={{width:"750px" }}>
+        <table className="table table-striped table-dark mx-auto" style={{width:"800px" }}>
             <thead className="thead-light">
               <tr>
                 <th>Title</th>
@@ -26,6 +26,8 @@ function MovieList() {
                 <th>Director</th>
                 <th>Rating</th>
                 <th>Edited</th>
+                <th>Lent To</th>
+                <th>Notes</th>
               </tr>
             </thead>
             <tbody>
@@ -36,7 +38,9 @@ function MovieList() {
                 <td>{m.year}</td>
                   <td>{m.director}</td>
                   <td>{m.rating}</td>
-                  <td>{m.edited}</td>
+                      <td>{m.edited}</td>
+                      <td>{m.lentTo}</td>
+                      <td>{m.notes}</td>
                 </tr>
               ))}
             </tbody>

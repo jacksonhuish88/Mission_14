@@ -5,5 +5,7 @@ export type Movie = {
   director: string;
   year: number;
   rating: string;
-  edited: string;
+    edited: string;
+    lentTo: string;
+    notes: string;
 };

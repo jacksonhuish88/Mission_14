@@ -20,6 +20,7 @@ namespace Mission_14.Controllers
         {
             var x = context.Movies
                 .Where(x => x.Edited=="Yes")
+                .OrderBy(x => x.Title)
                 .ToArray();
             
             return x;
